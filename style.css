@@ -937,119 +937,16 @@ padding: 0;
 
 }
 
-/* Footer container styling */
+
 
 
 
 /* Finance Complaints Project Details */
-main {
+ main {
   padding: 20px;
   margin: auto;
   background-color: #fff;
 }
-.project-details {
-  padding: 50px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.project-details img {
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.project-details h2,
-.project-details h3 {
-  text-align: center;
-}
-
-.project-details p,
-.project-details ul {
-  text-align: left;
-  padding: 0 20px;
-}
-
-.project-details ul {
-  list-style: disc;
-  padding-left: 40px;
-}
-.project-details ul li::before {
-  content: '✔️'; /* Fun bullet points */
-  position: absolute;
-  left: 0;
-  color: #0f2c71; /* Color of bullet point */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  main {
-      padding: 10px;
-      max-width: 100%;
-  }
-
-  .project-details img {
-      width: 100px; /* Adjust image size for smaller screens */
-  }
-
-  .project-details ul li {
-      padding-left: 15px;
-  }
-
-  .project-details ul li::before {
-      left: 5px; /* Adjust bullet point position for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-      font-size: 1.5em; /* Adjust font size for very small screens */
-  }
-
-  .project-details ul li {
-      padding-left: 10px;
-  }
-
-  .project-details ul li::before {
-      left: 3px; /* Further adjust bullet point position */
-  }
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-
-    .project-details img {
-        width: 100px; /* Adjust image size for smaller screens */
-    }
-
-    .project-details ul li {
-        padding-left: 15px;
-    }
-
-    .project-details ul li::before {
-        left: 5px; /* Adjust bullet point position for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em; /* Adjust font size for very small screens */
-    }
-
-    .project-details ul li {
-        padding-left: 10px;
-    }
-
-    .project-details ul li::before {
-        left: 3px; /* Further adjust bullet point position */
-    }
-}
-header h1 {
-  margin: 0;
-  text-align: center; /* Center align the text */
-}
-
 
 
 /* Coffee Sales Project details section */
@@ -1102,18 +999,23 @@ header h1 {
   margin-bottom: 5px;
 }
 .project-details li {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   line-height: 1.6;
   position: relative;
-  padding-left: 30px; /* Increased space for checkmark */
-  text-indent: 0; /* Prevent text from wrapping under icon */
+  padding-left: 36px; /* Further increased space for checkmark */
+  text-indent: 0;
+  display: flex;
+  flex-direction: column;
 }
 /* Ensure only the green ticks appear */
 .project-details li::before {
   content: "✅"; /* Checkmark */
   position: absolute;
   left: 0;
-  top: 2px; /* Align with first line of text */
+  top: 2px;
+  width: 24px; /* Set a fixed width for the icon */
+  height: 24px; /* Set a fixed height for the icon */
+  display: inline-block;
 }
 /* Sections Styling */
 .objective-section, 
@@ -1135,10 +1037,15 @@ header h1 {
 .conclusion-section strong {
   color: #333;
 }
+/* Specific styling for key terms */
+.project-details strong,
+.project-details b {
+  display: inline-block; /* Prevents breaking across lines with icons */
+}
 /* Responsive styles */
 @media (max-width: 768px) {
   .project-details {
-    padding: 20px 10px; /* Reduced side padding */
+    padding: 20px 10px;
   }
   .project-details h2 {
     font-size: 24px;
@@ -1153,15 +1060,20 @@ header h1 {
     padding: 0;
   }
   .project-details li {
-    padding-left: 28px; /* Slightly reduced but still enough space for icon */
-    margin-bottom: 12px; /* Increase space between items */
+    padding-left: 40px; /* Even more space on mobile */
+    margin-bottom: 18px; /* Further increased space between items */
+    display: block;
+  }
+  .project-details li::before {
+    top: 0;
+    font-size: 16px; /* Slightly smaller icon on mobile */
   }
   .project-details p {
-    padding: 0 10px; /* Reduced padding */
+    padding: 0 10px;
   }
   .dashboard-component,
   .impact-component {
-    padding: 0 10px; /* Reduced padding */
+    padding: 0 10px;
   }
 }
 
