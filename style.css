@@ -938,8 +938,7 @@ padding: 0;
 }
 
 /* Finance Complaints Project Details */
-
- main {
+main {
   padding: 20px;
   margin: auto;
   background-color: #fff;
@@ -950,25 +949,25 @@ padding: 0;
   margin: 0 auto;
   text-align: center;
 }
- 
+
 .project-details img {
   max-width: 80%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
- 
+
 .project-details h2,
 .project-details h3 {
   text-align: center;
 }
- 
+
 .project-details p,
 .project-details ul {
   text-align: left;
   padding: 0 20px;
 }
- 
+
 .project-details ul {
   list-style: disc;
   padding-left: 40px;
@@ -979,65 +978,65 @@ padding: 0;
   left: 0;
   color: #0f2c71; /* Color of bullet point */
 }
- 
+
 /* Responsive Design */
 @media (max-width: 768px) {
   main {
       padding: 10px;
       max-width: 100%;
   }
- 
+
   .project-details img {
       width: 100px; /* Adjust image size for smaller screens */
   }
- 
+
   .project-details ul li {
       padding-left: 15px;
   }
- 
+
   .project-details ul li::before {
       left: 5px; /* Adjust bullet point position for smaller screens */
   }
 }
- 
+
 @media (max-width: 480px) {
   header h1 {
       font-size: 1.5em; /* Adjust font size for very small screens */
   }
- 
+
   .project-details ul li {
       padding-left: 10px;
   }
- 
+
   .project-details ul li::before {
       left: 3px; /* Further adjust bullet point position */
   }
 }
 /* Responsive Design */
 @media (max-width: 768px) {
- 
+
     .project-details img {
         width: 100px; /* Adjust image size for smaller screens */
     }
- 
+
     .project-details ul li {
         padding-left: 15px;
     }
- 
+
     .project-details ul li::before {
         left: 5px; /* Adjust bullet point position for smaller screens */
     }
 }
- 
+
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.5em; /* Adjust font size for very small screens */
     }
- 
+
     .project-details ul li {
         padding-left: 10px;
     }
- 
+
     .project-details ul li::before {
         left: 3px; /* Further adjust bullet point position */
     }
@@ -1048,12 +1047,14 @@ header h1 {
 }
 
 
+
 /* Coffee Sales Project details section */
 .project-details {
   padding: 50px;
   max-width: 800px;
   margin: 0 auto;
 }
+
 .project-details img {
   width: 150px;
   height: auto;
@@ -1062,12 +1063,14 @@ header h1 {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .project-details h2 {
   text-align: center;
   color: #333;
   margin-bottom: 30px;
   font-size: 28px;
 }
+
 .project-details h3 {
   text-align: center;
   color: #444;
@@ -1075,11 +1078,13 @@ header h1 {
   padding-bottom: 10px;
   border-bottom: 2px solid #eaeaea;
 }
+
 .project-details h4 {
   color: #555;
   margin: 20px 0 10px;
   font-size: 18px;
 }
+
 .project-details p {
   line-height: 1.7;
   color: #333;
@@ -1087,35 +1092,33 @@ header h1 {
   text-align: left;
   padding: 0 20px;
 }
+
 /* Remove default bullet points and unwanted left spacing */
 .project-details ul {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
 }
+
 .project-details ul ul {
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
 .project-details li {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   line-height: 1.6;
   position: relative;
-  padding-left: 36px; /* Further increased space for checkmark */
-  text-indent: 0;
-  display: flex;
-  flex-direction: column;
+  padding-left: 25px; /* Space for checkmark */
 }
+
 /* Ensure only the green ticks appear */
 .project-details li::before {
   content: "✅"; /* Checkmark */
   position: absolute;
   left: 0;
-  top: 2px;
-  width: 24px; /* Set a fixed width for the icon */
-  height: 24px; /* Set a fixed height for the icon */
-  display: inline-block;
 }
+
 /* Sections Styling */
 .objective-section, 
 .goals-section,
@@ -1125,56 +1128,45 @@ header h1 {
 .conclusion-section {
   margin-bottom: 30px;
 }
+
 .dashboard-component,
 .impact-component {
   margin-bottom: 25px;
   padding: 0 20px;
 }
+
 .conclusion-section p {
   font-weight: 500;
 }
+
 .conclusion-section strong {
   color: #333;
 }
-/* Specific styling for key terms */
-.project-details strong,
-.project-details b {
-  display: inline-block; /* Prevents breaking across lines with icons */
-}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .project-details {
-    padding: 20px 10px;
+    padding: 20px;
   }
+
   .project-details h2 {
     font-size: 24px;
   }
+
   .project-details h3 {
     font-size: 20px;
   }
+
   .project-details h4 {
     font-size: 16px;
   }
+
   .project-details ul {
     padding: 0;
   }
-  .project-details li {
-    padding-left: 40px; /* Even more space on mobile */
-    margin-bottom: 18px; /* Further increased space between items */
-    display: block;
-  }
-  .project-details li::before {
-    top: 0;
-    font-size: 16px; /* Slightly smaller icon on mobile */
-  }
-  .project-details p {
-    padding: 0 10px;
-  }
-  .dashboard-component,
-  .impact-component {
-    padding: 0 10px;
-  }
 }
+
+
 
 .screenshot-section {
   text-align: center;
