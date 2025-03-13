@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Sales Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/NC Black Logo Design.png"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+              <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="contact-me.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+        </nav>
+<main>
+    <section class="project-details">
+        <img src="images/coffee.png" alt="Coffee Sales Dashboard">
+        <h2>New York Coffee Sales Analysis</h2>
+        
+        <div class="objective-section">
+            <h3>Objective</h3>
+            <p>The primary objective of this project is to analyze coffee sales trends across different store locations in New York, identify high-performing product categories, and provide insights into customer preferences over time. By leveraging sales data, this analysis helps optimize inventory management, improve sales strategies, and enhance business decision-making.</p>
+        </div>
+        
+        <div class="goals-section">
+            <h3>Key Goals</h3>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>Track coffee sales trends over time to identify peak sales periods.</li>
+                <li>Analyze sales performance by product category to determine top-selling items.</li>
+                <li> Compare sales performance across store locations to identify regional preferences.</li>
+                <li> Provide actionable insights to improve stock availability and maximize revenue.</li>
+            </ul>
+        </div>
+        
+        <div class="tools-section">
+            <h3>Tools Used</h3>
+            <ul>
+                <li>✓ <strong>SQL</strong> – Extracted and transformed sales data from the database.</li>
+                <li>✓ <strong>Excel</strong> – Cleaned and structured data before loading into Power BI.</li>
+                <li>✓ <strong>Power BI</strong> – Designed an interactive dashboard for sales analysis.</li>
+            </ul>
+        </div>
+        
+        <div class="results-section">
+            <h3>Dashboard Breakdown</h3>
+            
+            <div class="dashboard-component">
+                <h4>1. Coffee Sales Over Time</h4>
+                <ul>
+                    <li>A <strong>line chart</strong> visualizes total sales trends from January to June 2023.</li>
+                    <li>There is a noticeable upward trend, with fluctuations indicating seasonal demand.</li>
+                    <li>Peaks in sales could be linked to promotional campaigns, holidays, or weather patterns.</li>
+                </ul>
+            </div>
+            
+            <div class="dashboard-component">
+                <h4>2. Product Category Performance</h4>
+                <ul>
+                    <li>A <strong>bar chart</strong> categorizes total sales by product type, revealing high-demand items.</li>
+                    <li><strong>Top performers</strong>: Coffee (176.63K), Tea (128.04K), and Bakery items (80.96K).</li>
+                    <li>Lower-performing items such as Flavours (5.43K) and Packaged Chocolate (4.41K) may require strategic pricing or promotional offers to boost sales.</li>
+                </ul>
+            </div>
+            
+            <div class="dashboard-component">
+                <h4>3. Store Location & Product Type Filters</h4>
+                <ul>
+                    <li>Filters allow dynamic analysis based on:
+                        <ul>
+                            <li>✓ <strong>Store Location</strong> (Astoria, Hell's Kitchen, Lower Manhattan) to compare regional sales trends.</li>
+                            <li>✓ <strong>Product Type</strong> (e.g., Barista Espresso, Biscotti, Drip Coffee) for detailed product-level insights.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="dashboard-component">
+                <h4>4. Total Sales KPI</h4>
+                <ul>
+                    <li>A <strong>KPI card</strong> highlights total sales of <strong>504.34K</strong>, providing a quick overview of revenue performance.</li>
+                </ul>
+            </div>
+            
+            <div class="dashboard-component">
+                <h4>5. Geographic Sales Distribution</h4>
+                <ul>
+                    <li>A <strong>map visualization</strong> powered by Bing Maps displays store locations across the U.S., helping identify geographic sales distribution.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="impact-section">
+            <h3>Business Impact & Insights</h3>
+            
+            <div class="impact-component">
+                <h4>✔ Optimizing Stock & Inventory</h4>
+                <ul>
+                    <li>Understanding top-selling products ensures optimal stock levels, preventing shortages.</li>
+                    <li>Underperforming products may require discounts, bundling, or marketing adjustments.</li>
+                </ul>
+            </div>
+            
+            <div class="impact-component">
+                <h4>✔ Regional Sales Strategy</h4>
+                <ul>
+                    <li>Sales data per store location enables targeted marketing and promotional efforts.</li>
+                    <li>High-performing regions can serve as models for underperforming areas.</li>
+                </ul>
+            </div>
+            
+            <div class="impact-component">
+                <h4>✔ Seasonal Demand Planning</h4>
+                <ul>
+                    <li>The time-series analysis of coffee sales helps businesses prepare for peak sales periods.</li>
+                    <li>Seasonal trends can be leveraged to introduce limited-time offers and promotions.</li>
+                </ul>
+            </div>
+            
+            <div class="impact-component">
+                <h4>✔ Enhancing Customer Experience</h4>
+                <ul>
+                    <li>Identifying popular product types helps tailor offerings to customer preferences.</li>
+                    <li>Personalized recommendations and loyalty programs can drive repeat purchases.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="conclusion-section">
+            <h3>Conclusion</h3>
+            <p>By integrating SQL, Excel, and Power BI, this dashboard provides a <strong>data-driven approach to sales analysis</strong>, offering valuable insights into product performance, regional demand, and seasonal sales trends. These insights empower business managers to <strong>make informed decisions, optimize sales strategies, and improve overall revenue growth</strong> in the competitive New York coffee market.</p>
+        </div>
+
+        <div class="screenshot-section">
+            <img src="images/coffee dashboard.png" alt="Consumer Complaints Dashboard Screenshot">
+        </div>
+
+    </section>
+
+    <div class="center-container">
+        <a href="https://github.com/chantsmokoena/Data--Analysis---New-York-Coffee-Sales/tree/main" class="github-button">
+          <img src="images/githubb.png" alt="GitHub Logo">
+          Visit My GitHub Profile
+        </a>
+
+    </main>
+
+    <!--------Footer-------------->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/nontokozo-hlongwane-817a391b1/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/chantsmokoena" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p>© Chantel Hlongwane. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+   var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+  navLinks.style.right = "0";
+}
+
+function hideMenu() {
+  navLinks.style.right = "-200px";
+}
+    </script>
+</body>
+</html>

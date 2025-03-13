@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chantel Hlongwane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/NC Black Logo Design.png"></a>
+                <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+                  <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="contact-me.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+            </nav>
+<!------------Core Skills-------------->
+<section class="core-skills">
+  <div class="container">
+    
+<h2>My Tech Stack</h2>
+      <div class="skills-row">
+          <div class="skill">
+              <div class="skill-box">
+                  <img src="images/sql.png" alt="Microsoft SQL Server">
+              </div>
+              <p>Microsoft SQL Server</p>
+          </div>
+          <div class="skill">
+              <div class="skill-box">
+                  <img src="images/powerBI.png" alt="Microsoft Power BI">
+              </div>
+              <p>Microsoft Power BI</p>
+          </div>
+          <div class="skill">
+              <div class="skill-box">
+                  <img src="images/MExcel.png" alt="Microsoft Excel">
+              </div>
+              <p>Microsoft Excel</p>
+          </div>
+          <div class="skill">
+              <div class="skill-box">
+                  <img src="images/azure.png" alt="Microsoft Azure">
+              </div>
+              <p>Microsoft Azure</p>
+          </div>
+          <div class="skill">
+              <div class="skill-box">
+                  <img src="images/python.png" alt="Python">
+              </div>
+              <p>Python</p>
+          </div>
+          <div class="skill">
+            <div class="skill-box">
+              <img src="images/C.png" alt="C#">
+            </div>
+            <p>C#</p>
+        </div>
+      </div>
+</section>
+
+
+<section class="portfolio">
+  <h2>My Portfolio</h2>
+
+  <!-- Category Buttons -->
+  <div class="portfolio-categories">
+      <button class="category-btn active" onclick="filterPortfolio('all')">All</button>
+      <button class="category-btn" onclick="filterPortfolio('data-analysis')">Data Analysis & BI</button>
+      <button class="category-btn" onclick="filterPortfolio('software-dev')">Software Development</button>
+      <!--<button class="category-btn" onclick="filterPortfolio('branding')">Branding & Speaking</button> -->
+      
+  </div>
+
+  <div class="portfolio-items">
+      <!-- Data Analysis & BI -->
+      <div class="portfolio-item data-analysis">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="images/manufacturing.png" alt="Manufacturing Operational Downtime">
+                      <p>Manufacturing Operational Downtime</p>
+                  </div>
+                  <div class="flip-card-back">
+                      <p>Created an interactive dashboard for a manufacturing company to get business insights on their operational downtime using Power BI.</p>
+                      <button class="read-more-btn" onclick="location.href='manufacturing-downtime-details.html'">Read More</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Data Analysis & BI -->
+      <div class="portfolio-item data-analysis">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="images/finance.png" alt="Python">
+                      <p>Consumer Complaints on Financial Products.</p>
+                  </div>
+                  <div class="flip-card-back">
+                      <p>Developed an interactive dashboard that summarises consumer complaints on financial products.</p>
+                      <button class="read-more-btn" onclick="location.href='finance-complaints-details.html'">Read More</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!-- Coffee Sales -->
+<div class="portfolio-item data-analysis">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/coffee.png" alt="Coffee">
+                <p>New York Coffee Sales.</p>
+            </div>
+            <div class="flip-card-back">
+                <p>Developed an interactive dashboard that summarises overall coffee sales in New York.</p>
+                <a href="coffee-sales-details.html"><button class="read-more-btn">Read More</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  <!--------Footer-------------->
+  <footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/nontokozo-hlongwane-817a391b1/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/chantsmokoena" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="footer-text">
+            <p>© Chantel Hlongwane. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-----------------------------------JavaScript-- for Menu--------------------->
+</body>
+
+  <script>
+   var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+  navLinks.style.right = "0";
+}
+
+function hideMenu() {
+  navLinks.style.right = "-200px";
+}
+document.addEventListener("DOMContentLoaded", () => {
+    // Select all skill boxes
+    const skills = document.querySelectorAll(".skill-box");
+
+    // Check if any skill boxes were selected
+    if (skills.length > 0) {
+        // Add fade-in animation
+        skills.forEach((skill, index) => {
+            skill.style.opacity = "0"; // Initially hidden
+            skill.style.transform = "translateY(20px)";
+            setTimeout(() => {
+                skill.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+                skill.style.opacity = "1"; // Fade in
+                skill.style.transform = "translateY(0)";
+            }, index * 200); // Staggered effect
+        });
+    } else {
+        console.error('No elements with the class "skill-box" found');
+    }
+});
+
+
+    // Click event for each skill
+    skills.forEach((skill) => {
+        skill.addEventListener("click", () => {
+            console.log(`You clicked on: ${skill.querySelector("img").alt}`);
+        });
+    });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const readMoreButtons = document.querySelectorAll(".read-more-btn");
+
+    readMoreButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const fullDesc = this.previousElementSibling;
+            const shortDesc = fullDesc.previousElementSibling;
+            
+            if (fullDesc.style.display === "none" || fullDesc.style.display === "") {
+                fullDesc.style.display = "block";
+                shortDesc.style.display = "none";
+                this.textContent = "Read Less";
+            } else {
+                fullDesc.style.display = "none";
+                shortDesc.style.display = "block";
+                this.textContent = "Read More";
+            }
+        });
+    });
+});
+
+
+
+function filterPortfolio(category) {
+    const items = document.querySelectorAll('.portfolio-item');
+    const buttons = document.querySelectorAll('.category-btn');
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`[onclick="filterPortfolio('${category}')"]`).classList.add('active');
+
+    items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+
+  </script>
+</html>
+

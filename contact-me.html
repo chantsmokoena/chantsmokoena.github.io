@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chantel Hlongwane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+<body>
+
+    <section class="header">
+        <nav>
+          <a href="index.html"><img src="Images/NC Black Logo Design.png" class="logo"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="Portfolio.html">Portfolio</a></li>
+              <li><a href="contact-me.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+        </nav>
+
+<main>
+        <div class="contact-container">
+          <div class="contact-header">Get in touch</div>
+          <form class="contact-form" action="https://formspree.io/f/xeoaqplr" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="email">Your email:</label>
+              <input type="email" id="email" name="email" required>
+      
+              <label for="message">Your message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+      
+              <!-- your other form fields go here -->
+      
+              <button type="submit">Send</button>
+          </form>
+      </div>
+      
+</main>
+
+       <!--------Footer-------------->
+       <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/nontokozo-hlongwane-817a391b1/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/chantsmokoena" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p>© Chantel Hlongwane. All rights reserved.</p>
+            </div>
+        </div>
+      </footer>
+    </body>
+
+  
+  <!---------------------------------JavaScript-- for Menu--------------------->
+
+  <script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+  navLinks.style.right = "0";
+}
+
+function hideMenu() {
+  navLinks.style.right = "-200px";
+}    
+ </script>
+
+
+
+
+</html>
+  

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chantel Hlongwane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+
+    <body>
+      <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/NC Black Logo Design.png"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+              <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="contact-me.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+        </nav>
+        <div class="container">
+            <div class="left-section">
+                <h1>Chantel Hlongwane</h1>
+                <h2 id="typing-effect"></h2>
+                <p>I am a dynamic professional with expertise as a Data Analyst, Business Intelligence and SQL Developer, Software Developer, and Public Speaker.
+                    <br>I’m also passionate about personal branding and helping others build their professional presence. Explore my personal portfolio or download my resume below.</p>
+                <a href="https://drive.google.com/file/d/1mlX1TFqLvcONcDeW8e8pW1Ui_d8IHpqO/view?usp=sharing">Download Resume</a>
+            </div>
+            <div class="right-section">
+                <img src="Images/Nto.jpg" alt="Chantel Hlongwane">
+            </div>
+            <!-- Social Icons -->
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/nontokozo-hlongwane-817a391b1/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/chantsmokoena" target="_blank">
+                  <i class="fab fa-github"></i>
+              </a>
+          </div>
+        </div>
+    </section>
+
+    <section class="about-me">
+        <div class="container">
+            <h2>
+              <i class="fas fa-laptop-code"></i>About Me</h2>
+            <p>Hi, I'm Chantel Hlongwane, a dynamic professional with expertise in Data Analysis, Business Intelligence, and Software Development. I discovered my passion for Big Data and software development during my internship at one of the biggest automotive companies, where I was exposed to large datasets, sparking my interest in harnessing data to drive impactful solutions.
+
+              Currently, I collaborate with cross-functional teams using Python, Power BI, and Tableau to drive data-driven decision-making. My passion extends beyond my technical skills—I’m also committed to personal branding and professional development, constantly seeking opportunities for growth.
+              
+              In addition, I offer training in Tableau, Power BI, and data visualization best practices, empowering others to leverage the power of data.
+               <br>
+               <br>
+               I also offer training in Tableau, Power BI and data visualisation best practices.</p>
+        </div>
+    </section>
+
+<!--------------Skills ------------------->
+<section class="Summary-section">
+  <div class="Summary-container">
+      <div class="summary-items">
+          <div class="summary-item">
+              <i class="fas fa-chart-line"></i>
+              <h3>Data Analysis and Business Intelligence</h3>
+              <p>Specialized in transforming data into actionable insights using Power BI, SQL, and advanced analytics techniques. Experienced in creating interactive dashboards and reports for data-driven decision-making.</p>
+          </div>
+          <div class="summary-item">
+              <i class="fas fa-code"></i>
+              <h3>Software Development</h3>
+              <p>Building scalable and efficient software solutions using modern development practices and tools. Proficient in Python, JavaScript, and cloud-based technologies to deliver robust applications.</p>
+          </div>
+          <div class="summary-item">
+              <i class="fas fa-microphone"></i>
+              <h3>Public Speaking and Personal Branding Enthusiast</h3>
+              <p>Passionate about personal branding and helping others build their professional presence. Experienced in public speaking, workshops, and creating engaging content to inspire and educate.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+ <!--------Footer-------------->
+ <footer>
+  <div class="footer-container">
+      <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+      </div>
+      <div class="social-media">
+          <a href="https://www.linkedin.com/in/nontokozo-hlongwane-817a391b1/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/chantsmokoena" target="_blank">
+              <i class="fab fa-github"></i>
+          </a>
+      </div>
+      <div class="footer-text">
+          <p>© Chantel Hlongwane. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+<!-----------------------------------JavaScript-- for Menu--------------------->
+</body>
+
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+  navLinks.style.right = "0";
+}
+
+function hideMenu() {
+  navLinks.style.right = "-200px";
+}
+
+
+        const titles = ["Data Analyst", "Software Developer", "BI and SQL Developer", "Public Speaker", "Personal Branding Enthusiast"];
+    let currentIndex = 0;
+    let charIndex = 0;
+    const typingElement = document.getElementById('typing-effect');
+
+    function type() {
+      if (charIndex < titles[currentIndex].length) {
+        typingElement.textContent += titles[currentIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 150);
+      } else {
+        setTimeout(erase, 2000);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typingElement.textContent = titles[currentIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 100);
+      } else {
+        currentIndex = (currentIndex + 1) % titles.length;
+        setTimeout(type, 500);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (titles.length) setTimeout(type, 500);
+    });
+
+
+
+    </script>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chantel Hlongwane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/NC Black Logo Design.png"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+              <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="contact-me.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+        </nav>
+    </div>
+
+        <main>
+            <section class="project-details">
+                <img src="images/finance.png" alt="Consumer Complaints Dashboard">
+                <h2>Consumer Complaints Analysis</h2>
+                
+                <div class="objective-section">
+                    <h3>Objective</h3>
+                    <p>The primary goal of this analysis is to monitor and analyze consumer complaints related to financial products. By identifying key factors such as product categories, complaint submission channels, and company response trends, this analysis helps financial institutions improve customer satisfaction, address recurring issues, and enhance service quality.</p>
+                </div>
+                
+                <div class="goals-section">
+                    <h3>Key Goals</h3>
+                    <ul>
+                        <li>✓ Identify trends in complaints over time to assess improvements or persistent issues.</li>
+                        <li>✓ Analyze which financial products receive the most complaints.</li>
+                        <li>✓ Evaluate complaints by submission channel to identify service gaps or efficiency improvements.</li>
+                        <li>✓ Provide actionable insights to enhance complaint resolution and customer experience.</li>
+                    </ul>
+                </div>
+                
+                <div class="tools-section">
+                    <h3>Tools Used</h3>
+                    <ul>
+                        <li>✓ <strong>SQL</strong> – Extracted and structured consumer complaint data.</li>
+                        <li>✓ <strong>Excel</strong> – Cleaned and formatted data for Power BI import.</li>
+                        <li>✓ <strong>Power BI</strong> – Designed an interactive dashboard for complaint analysis.</li>
+                    </ul>
+                </div>
+                
+                <div class="results-section">
+                    <h3>Dashboard Breakdown</h3>
+                    
+                    <div class="dashboard-component">
+                        <h4>1. Complaint Trends Over Time</h4>
+                        <ul>
+                            <li>A <strong>bar chart</strong> displays complaints by year (2018: 180, 2020: 223, 2022: 282).</li>
+                            <li>There is an upward trend in complaints, peaking in 2022, indicating potential service quality issues.</li>
+                            <li>Further investigation is needed to determine the root cause of this increase.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dashboard-component">
+                        <h4>2. Complaints by Product</h4>
+                        <ul>
+                            <li>A <strong>pie chart</strong> categorizes complaints by product type.</li>
+                            <li><strong>Top contributors:</strong> Checking/Savings Accounts (633), Credit Cards (440), and Mortgages (165).</li>
+                            <li>Lower complaints for Student Loans and Debt Collection suggest better reliability.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dashboard-component">
+                        <h4>3. Complaints by Submission Channel</h4>
+                        <ul>
+                            <li>A <strong>stacked bar chart</strong> displays complaints submitted via Web, Phone, and Email.</li>
+                            <li>Analyzing submission channels helps optimize customer support resource allocation.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dashboard-component">
+                        <h4>4. Complaint Resolution Analysis</h4>
+                        <ul>
+                            <li>A <strong>KPI card</strong> highlights 958 complaints closed with an explanation, 383 with monetary relief.</li>
+                            <li>Understanding resolution types helps improve customer satisfaction and support efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="impact-section">
+                    <h3>Business Impact & Insights</h3>
+                    
+                    <div class="impact-component">
+                        <h4>✔ Reducing Complaints & Improving Customer Support</h4>
+                        <ul>
+                            <li>Prioritizing high-complaint products can enhance service quality.</li>
+                            <li>Developing clearer disclosures on fees and policies may prevent misunderstandings.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="impact-component">
+                        <h4>✔ Enhancing Complaint Resolution Efficiency</h4>
+                        <ul>
+                            <li>Optimizing response times and support allocation based on complaint trends.</li>
+                            <li>Ensuring monetary relief cases are minimized through proactive measures.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="impact-component">
+                        <h4>✔ Monitoring Continuous Improvement</h4>
+                        <ul>
+                            <li>Tracking yearly trends helps sustain improvements in customer service.</li>
+                            <li>Future enhancements can include root cause analysis for persistent complaints.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="conclusion-section">
+                    <h3>Conclusion</h3>
+                    <p>By integrating SQL, Excel, and Power BI, this dashboard provides a <strong>data-driven approach to complaint analysis</strong>. The insights help financial institutions <strong>resolve customer issues effectively, optimize complaint-handling processes, and improve overall customer satisfaction</strong>.</p>
+                </div>
+
+                <div class="screenshot-section">
+                    <img src="images/finance dashboard.png" alt="Consumer Complaints Dashboard Screenshot">
+                </div>
+                
+            </section>
+
+            <div class="center-container">
+                <a href="https://github.com/chantsmokoena/Data--Analysis--Consumer-Complaints-on-Financial-Products" class="github-button">
+                  <img src="images/githubb.png" alt="GitHub Logo">
+                  Visit My GitHub Profile
+                </a>
+            </div>
+        </main>
+
+
+
+          <!--------Footer-------------->
+ <footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/nontokozo-hlongwane-817a391b1/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/chantsmokoena" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="footer-text">
+            <p>© Chantel Hlongwane. All rights reserved.</p>
+        </div>
+    </div>
+  </footer>
+</body>
+
+
+
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+  navLinks.style.right = "0";
+}
+
+function hideMenu() {
+  navLinks.style.right = "-200px";
+}
+      </script>
+
+
+
+
+</html>

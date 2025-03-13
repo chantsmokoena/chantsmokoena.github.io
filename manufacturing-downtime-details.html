@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chantel Hlongwane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+<body>
+        <section class="header">
+          <nav>
+              <a href="index.html"><img src="Images/NC Black Logo Design.png"></a>
+              <div class="nav-links" id="navLinks">
+                <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+                <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="Portfolio.html">Portfolio</a></li>
+                      <li><a href="contact-me.html">Contact Me</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+          </nav>
+<main>
+    <section class="project-details">
+    <img src="images/manufacturing.png" alt="Manufacturing Operational Downtime">
+    <h2>Manufacturing Downtime Analysis</h2>
+    
+    <div class="objective-section">
+        <h3>Objective</h3>
+        <p>The primary goal of this analysis is to monitor and analyze equipment downtime in the manufacturing process. By identifying key contributors to downtime, such as <strong>products, operators, and time trends</strong>, this analysis helps improve operational efficiency, reduce disruptions, and enhance overall productivity.</p>
+    </div>
+    
+    <div class="goals-section">
+        <h3>Key Goals</h3>
+        <ul>
+            <li>Identify trends in downtime over time to assess operational improvements or recurring issues.</li>
+            <li> Analyze which <strong>products</strong> contribute the most to downtime.</li>
+            <li> Evaluate downtime <strong>by operator</strong> to identify potential training or process gaps.</li>
+            <li> Provide actionable insights to <strong>minimize equipment failures</strong> and optimize production.</li>
+        </ul>
+    </div>
+    
+    <div class="tools-section">
+        <h3>Tools Used</h3>
+        <ul>
+            <li><strong>SQL</strong> – Extracted and structured downtime data from the manufacturing database.</li>
+            <li> <strong>Excel</strong> – Cleaned and formatted data for Power BI import.</li>
+            <li> <strong>Power BI</strong> – Designed an interactive dashboard for downtime analysis.</li>
+        </ul>
+    </div>
+    
+    <div class="results-section">
+        <h3>Dashboard Breakdown</h3>
+        
+        <div class="dashboard-component">
+            <h4>1. Downtime Trends Over Time</h4>
+            <ul>
+                <li>A <strong>bar chart</strong> compares downtime in August (853) vs. September (535), showing a <strong>reduction in downtime</strong>.</li>
+                <li>This <strong>downward trend</strong> suggests operational improvements, possible maintenance strategies, or process adjustments.</li>
+                <li>Further investigation is required to determine if this reduction is sustainable or due to temporary factors.</li>
+            </ul>
+        </div>
+        
+        <div class="dashboard-component">
+            <h4>2. Downtime by Product</h4>
+            <ul>
+                <li>A <strong>pie chart</strong> categorizes total downtime by product:
+                    <ul>
+                        <li><strong>CO-600</strong> contributes the most to downtime (494 instances, 35.59%).</li>
+                        <li><strong>CO-2L, RB-600, and LE-600</strong> also have significant downtime durations.</li>
+                        <li> <strong>OR-600 and DC-600</strong> have lower downtime, potentially indicating better reliability.</li>
+                    </ul>
+                </li>
+                <li>These insights help prioritize maintenance schedules and process improvements for <strong>high-downtime products</strong>.</li>
+            </ul>
+        </div>
+        
+        <div class="dashboard-component">
+            <h4>3. Downtime by Operator</h4>
+            <ul>
+                <li>A <strong>stacked bar chart</strong> displays downtime distribution per operator (<strong>Charlie, Dee, Mac, Dennis</strong>).</li>
+                <li>Each operator has varying contributions across different product types, which could indicate:
+                    <ul>
+                        <li> Skill gaps or training needs for certain operators.</li>
+                        <li> Equipment assigned to specific operators may be more prone to failures.</li>
+                        <li>Process inefficiencies affecting certain operators disproportionately.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="dashboard-component">
+            <h4>4. Operator Error Downtime</h4>
+            <ul>
+                <li>A <strong>KPI card</strong> highlights <strong>776 downtime instances due to operator errors</strong>.</li>
+                <li>This suggests a need for <strong>operator training, SOP improvements, or automation strategies</strong> to reduce human errors.</li>
+            </ul>
+        </div>
+        
+        <div class="dashboard-component">
+            <h4>5. Filtering Capabilities</h4>
+            <ul>
+                <li>Users can filter downtime data by:
+                    <ul>
+                        <li> <strong>Product</strong> (e.g., CO-2L, CO-600) to assess downtime per equipment type.</li>
+                        <li> <strong>Date</strong> to track performance over specific periods.</li>
+                        <li> <strong>Operator</strong> to analyze individual performance and identify areas for improvement.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="impact-section">
+        <h3>Business Impact & Insights</h3>
+        
+        <div class="impact-component">
+            <h4>Reducing Downtime & Optimizing Maintenance</h4>
+            <ul>
+                <li>Prioritizing <strong>CO-600 and other high-downtime products</strong> for proactive maintenance can <strong>reduce unplanned stoppages</strong>.</li>
+                <li>Implementing <strong>predictive maintenance</strong> using downtime trends could further <strong>minimize disruptions</strong>.</li>
+            </ul>
+        </div>
+        
+        <div class="impact-component">
+            <h4> Enhancing Workforce Productivity</h4>
+            <ul>
+                <li>Identifying <strong>operator-related downtime</strong> (776 instances) can drive <strong>training initiatives</strong> to improve efficiency.</li>
+                <li>Reviewing best practices among operators with lower downtime can help <strong>standardize successful techniques</strong>.</li>
+            </ul>
+        </div>
+        
+        <div class="impact-component">
+            <h4> Monitoring Continuous Improvement</h4>
+            <ul>
+                <li>The decrease in downtime from August to September suggests positive changes, but ongoing <strong>trend monitoring</strong> is necessary to sustain improvements.</li>
+                <li>Future enhancements can include <strong>root cause analysis</strong> for each downtime type, further refining downtime reduction strategies.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="conclusion-section">
+        <h3>Conclusion</h3>
+        <p>This <strong>Manufacturing Downtime Dashboard</strong> provides a <strong>data-driven approach</strong> to minimizing production interruptions by analyzing key downtime contributors across <strong>time, products, and operators</strong>. By leveraging <strong>SQL, Excel, and Power BI</strong>, manufacturers can gain actionable insights, implement targeted improvements, and drive operational efficiency.</p>
+    </div>
+
+    <div class="screenshot-section">
+        <img src="images/Manufacturing dashboard.png" alt="Consumer Complaints Dashboard Screenshot">
+    </div>
+</section>
+
+        <div class="center-container">
+            <a href="https://github.com/chantsmokoena/Data-Analysis-Manufacturing-Downtime" class="github-button">
+              <img src="images/githubb.png" alt="GitHub Logo">
+              Visit My GitHub Profile
+            </a>
+        </div>
+    </main>
+
+    <!--------Footer-------------->
+ <footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/nontokozo-hlongwane-817a391b1/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/chantsmokoena" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="footer-text">
+            <p>© Chantel Hlongwane. All rights reserved.</p>
+        </div>
+    </div>
+  </footer>
+</body>
+
+
+
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+      </script>
+
+
+
+
+</html>
