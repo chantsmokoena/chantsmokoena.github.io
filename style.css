@@ -937,15 +937,114 @@ padding: 0;
 
 }
 
-
-
-
-
 /* Finance Complaints Project Details */
+
  main {
   padding: 20px;
   margin: auto;
   background-color: #fff;
+}
+.project-details {
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.project-details img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+ 
+.project-details h2,
+.project-details h3 {
+  text-align: center;
+}
+ 
+.project-details p,
+.project-details ul {
+  text-align: left;
+  padding: 0 20px;
+}
+ 
+.project-details ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+.project-details ul li::before {
+  content: '✔️'; /* Fun bullet points */
+  position: absolute;
+  left: 0;
+  color: #0f2c71; /* Color of bullet point */
+}
+ 
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+      padding: 10px;
+      max-width: 100%;
+  }
+ 
+  .project-details img {
+      width: 100px; /* Adjust image size for smaller screens */
+  }
+ 
+  .project-details ul li {
+      padding-left: 15px;
+  }
+ 
+  .project-details ul li::before {
+      left: 5px; /* Adjust bullet point position for smaller screens */
+  }
+}
+ 
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5em; /* Adjust font size for very small screens */
+  }
+ 
+  .project-details ul li {
+      padding-left: 10px;
+  }
+ 
+  .project-details ul li::before {
+      left: 3px; /* Further adjust bullet point position */
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+ 
+    .project-details img {
+        width: 100px; /* Adjust image size for smaller screens */
+    }
+ 
+    .project-details ul li {
+        padding-left: 15px;
+    }
+ 
+    .project-details ul li::before {
+        left: 5px; /* Adjust bullet point position for smaller screens */
+    }
+}
+ 
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Adjust font size for very small screens */
+    }
+ 
+    .project-details ul li {
+        padding-left: 10px;
+    }
+ 
+    .project-details ul li::before {
+        left: 3px; /* Further adjust bullet point position */
+    }
+}
+header h1 {
+  margin: 0;
+  text-align: center; /* Center align the text */
 }
 
 
