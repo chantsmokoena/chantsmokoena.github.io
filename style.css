@@ -998,25 +998,24 @@ padding: 0;
   margin-top: 10px;
   margin-bottom: 5px;
 }
-/* Ensure better alignment of icons and text */
 .project-details li {
   margin-bottom: 12px;
   line-height: 1.6;
   position: relative;
-  padding-left: 0; /* No need for extra left padding */
+  padding-left: 36px; /* Further increased space for checkmark */
   text-indent: 0;
   display: flex;
-  align-items: flex-start;
-  gap: 10px; /* Space between checkmark and text */
+  flex-direction: column;
 }
 /* Ensure only the green ticks appear */
 .project-details li::before {
   content: "✅"; /* Checkmark */
+  position: absolute;
+  left: 0;
+  top: 2px;
   width: 24px; /* Set a fixed width for the icon */
   height: 24px; /* Set a fixed height for the icon */
-  font-size: 1.2em;
   display: inline-block;
-  flex-shrink: 0; /* Prevent shrinking */
 }
 /* Sections Styling */
 .objective-section, 
@@ -1061,13 +1060,13 @@ padding: 0;
     padding: 0;
   }
   .project-details li {
-    flex-direction: row; /* Ensures text stays inline with the checkmark */
-    gap: 8px; /* Adjust spacing on mobile */
+    padding-left: 40px; /* Even more space on mobile */
+    margin-bottom: 18px; /* Further increased space between items */
+    display: block;
   }
   .project-details li::before {
-    font-size: 1em; /* Slightly smaller icon on mobile */
-    width: 20px;
-    height: 20px;
+    top: 0;
+    font-size: 16px; /* Slightly smaller icon on mobile */
   }
   .project-details p {
     padding: 0 10px;
@@ -1077,8 +1076,6 @@ padding: 0;
     padding: 0 10px;
   }
 }
-
-
 
 .screenshot-section {
   text-align: center;
